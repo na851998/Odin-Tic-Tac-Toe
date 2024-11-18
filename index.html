@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://www.svgrepo.com/show/143264/tic-tac-toe-game.svg"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Tic Tac Toe</h1>
+
+      <!-- Controls Section -->
+      <div class="controls">
+        <div class="opponent">
+          <label for="opponent">Opponent:</label>
+          <select id="opponent">
+            <option value="Player">Player</option>
+            <option value="Computer">Computer</option>
+          </select>
+        </div>
+
+        <div class="symbol-select">
+          <span>Choose Symbol:</span>
+          <button id="chooseX" class="symbol-btn">X</button>
+          <button id="chooseO" class="symbol-btn">O</button>
+        </div>
+      </div>
+
+      <!-- Scoreboard -->
+      <div class="scoreboard">
+        <div class="score">
+          <span id="playerOneInfo">Player (X):</span>
+          <span id="playerOneScore">0</span>
+        </div>
+        <div class="score">
+          <span id="playerTwoInfo">Player (O):</span>
+          <span id="playerTwoScore">0</span>
+        </div>
+      </div>
+
+      <div class="turn-indicator">X's turn</div>
+
+      <!-- Game Board -->
+      <div class="board"></div>
+
+      <!-- Restart Button -->
+      <div class="buttons">
+        <button id="newRoundBtn" class="restart-btn">New Round</button>
+        <button id="newGameBtn" class="restart-btn">New Game</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
